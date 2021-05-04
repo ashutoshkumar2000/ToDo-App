@@ -1,0 +1,349 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0px;
+    font-family: "Raleway", sans-serif;
+    background-color: #ecf0f1;
+
+}
+
+/* Toolbar customization starts here */
+
+.toolbar{
+    height: 12vh;
+    background-color: #2d3436;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5rem;
+}
+
+/* dark */
+.dark_toolbar{
+    height: 12vh;
+    background-color: #151515;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5rem;
+}
+
+/* Filter container -> pink, blue, green, black */
+.filter-container{
+    height: 60%;
+    width: 14rem;
+    margin-right: 4rem;
+    border-radius: 0.2rem;
+    background-color: #6d7c7e;
+    display: flex;
+}
+
+
+/* dark */
+.dark_filter-container{
+    height: 60%;
+    border: 1px solid white;
+    width: 14rem;
+    margin-right: 4rem;
+    border-radius: 0.2rem;
+    background-color: #301b3f;
+    display: flex;
+}
+.filter{
+    height: 100%;
+    /* 1/4 */
+    width:25%;
+    /* border: 1px solid red; */
+    /* perfectly center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color .4s ease, transform .6s;
+}
+.filter:hover{
+    background-color: #808e9b;
+    transform: scale(1.1);      
+}
+.filter:active{
+    background-color: #d2dae2;
+}
+
+
+.dark_filter{
+    height: 100%;
+    /* 1/4 */
+    width:25%;
+    /* border: 1px solid red; */
+    /* perfectly center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color .4s ease, transform .6s;
+}
+.dark_filter:hover{
+    background-color: #442658;
+    transform: scale(1.05);
+    border: 1px solid white;
+}
+.dark_filter:active{
+    background-color: #8c4ab8;
+}
+
+
+.filter_color{
+    height: 40%;
+    width:40%;
+    border-radius: 0.2rem;
+}
+
+/* dark */
+.dark_filter_color{
+    height: 40%;
+    width:40%;
+    border: 1px solid white;
+    border-radius: 0.2rem;
+}
+
+.pink{
+background-color: #eb3b5a;
+}
+.blue{
+background-color: #3867d6;
+}
+.green{
+background-color: #f7b731;
+}
+.black{
+    background-color: #20bf6b;
+}
+
+/* dark */
+.dark_black{
+    background-color: #fff;
+}
+
+/* Add and remove tasks using '+' and 'x' respectively */
+.action-container{
+    height: 60%;
+    width: 8rem;
+    background-color: #6d7c7e;
+    border-radius: 0.2rem;
+    display: flex;
+    border-radius: 0.2rem solid;
+}
+/* dark */
+.dark_action-container{
+    height: 60%;
+    border: 1px solid white;
+    width: 8rem;
+    background-color: #301b3f;
+    border-radius: 0.2rem;
+    display: flex;
+    border-radius: 0.2rem solid;
+}
+
+
+.icon-container{
+    width:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* icons -> text */
+
+.fas{
+    font-size: 1.5rem;
+}
+
+/* dark */
+.dark_fas{
+    font-size: 1.5rem;
+    color: #fff;
+}
+.active{
+    background-color: #474a4b;
+    border-top-right-radius: .2rem;
+    border-bottom-right-radius: .2rem;
+}
+.dark_active{
+    background-color: rgb(32, 0, 0);
+    border-top-right-radius: .2rem;
+    border-bottom-right-radius: .2rem;
+}
+
+/*Theme Customization styling starts below*/
+.far{
+    position: absolute;
+    right: 0px;
+    top: 4.5%;
+    font-size: 1.5rem;
+    padding-right: 50px;
+}
+.fa-sun{
+    color: #fff;
+    visibility: visible;
+}
+.fa-moon{
+    color: #fff;
+    visibility: hidden;
+}
+
+
+
+/* modal css */
+.modal_container{
+    position: absolute;
+    height:18rem;
+    width:36rem;
+    /* variable value */
+    left: calc((100vw - 36rem)/2);
+    top:30vh;
+    display: flex;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.698);
+}
+.input_container{
+    height: 100%;
+    width:73%;
+}
+
+.modal_input{
+    height: 100%;
+    width:100%;
+    outline:none;
+    padding: 2rem 3rem;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.5rem;
+    line-height: 145%;
+    font-weight: 400;
+
+}
+
+/* dark */
+.dark_modal_input{
+    background-color: black;
+    color: #fff;
+    height: 100%;
+    width:100%;
+    outline:none;
+    padding: 2rem 3rem;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.5rem;
+    line-height: 145%;
+    font-weight: 400;
+
+}
+
+.modal_filter_container{
+ width:27%;
+ background-color: #444;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+padding: 1.7rem 1.2rem;
+}
+
+/* dark */
+.dark_modal_filter_container{
+    width:27%;
+    background-color: #1b1717;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   /* gap:2rem; */
+   align-items: center;
+   padding: 1.7rem 1.2rem;
+   border: 1px solid rgb(150, 150, 150);
+   }
+
+
+
+.modal_filter_container>.filter{
+   height: 15%; 
+   width:60%
+}
+.border{
+    border: 0.2rem solid white;
+}
+
+
+/* task css */
+.main_container{
+   height:88vh;
+   overflow: auto;
+    padding-top: 2rem;
+    padding-left: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+/* dark */
+.dark_main_container{
+    height:88vh;
+   overflow: auto;
+    padding-top: 2rem;
+    padding-left: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #301b3f;
+}
+.task_filter{
+    height: 7%;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+
+.task_container{
+    height: 10rem;
+    border-radius: .5rem;
+    width:16rem;
+    margin-bottom: 15px;
+    background-color: #fff;
+}
+
+/* dark */
+.dark_task_container{
+    height: 10rem;
+    width:16rem; 
+    background-color: black;
+    border: 1px solid white;
+    border-radius: .5rem;
+}
+
+.task_desc_container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    padding-left:0.5rem;
+}
+
+/* dark */
+.dark_task_desc_container{
+    height: 80%;
+    padding-left:0.5rem;
+    color: #fff;
+}
+
+.task_desc{
+    height: 70%;
+    overflow:auto;
+    text-align: center;
+    /* words */
+    word-break: break-all;
+    
+}
+.uid{
+    color: #444;
+    margin-bottom: 0.1rem;;
+}
+
+/* dark */
+.dark_uid{
+    color: #fff;
+    margin-bottom: 0.1rem;;
+}
